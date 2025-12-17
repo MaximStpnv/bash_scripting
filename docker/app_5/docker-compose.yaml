@@ -1,0 +1,18 @@
+version: "3.9"
+services:
+  bd:
+    image: postgres:16
+    container_name: bd
+    ports:
+      - "55432:5432"
+    environment:
+      POSTGRES_DATABASE: app_4
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: password 
+      POSTGRES_ROOT_PASSWORD: password
+
+    volumes:
+     - pg_data:/var/lib/postgresql/data
+
+volumes:
+  pg_data:

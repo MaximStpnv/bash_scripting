@@ -1,0 +1,7 @@
+prometheus_http_requests_total
+rate(prometheus_http_requests_total[1m])
+sum(rate(prometheus_http_requests_total[1m])) by (handler)
+prometheus_http_requests_total{code=~"4..|5.."}
+sum by (method) (
+  rate(prometheus_http_requests_total[5m])
+)

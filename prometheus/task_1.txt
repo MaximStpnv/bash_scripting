@@ -1,0 +1,4 @@
+prometheus_tsdb_storage_blocks_bytes/1024/1024
+prometheus_tsdb_blocks_loaded
+rate(prometheus_tsdb_compactions_total[5m])
+prometheus_tsdb_head_samples_appended_total

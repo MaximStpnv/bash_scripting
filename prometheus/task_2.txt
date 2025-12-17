@@ -1,0 +1,5 @@
+go_goroutines
+rate(go_gc_duration_seconds_count[1m])
+go_gc_duration_seconds_sum
+go_memstats_alloc_bytes/1024/1024
+go_memstats_heap_inuse_bytes/1024/1024
